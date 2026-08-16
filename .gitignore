@@ -1,4 +1,5 @@
 venv/
 click/
+flask/
 __pycache__/
 *.pyc

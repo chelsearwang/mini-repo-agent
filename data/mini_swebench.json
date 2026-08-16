@@ -1,6 +1,7 @@
 [
   {
     "issue_number": 3487,
+    "repo": "click",
     "problem_statement": "Echoing an empty bytes or bytearray object with click.echo() raises a TypeError instead of writing nothing.",
     "fix_commit": "a5f5aa6",
     "changed_files": [
@@ -11,6 +12,7 @@
   },
   {
     "issue_number": 3449,
+    "repo": "click",
     "problem_statement": "Using echo_via_pager together with CliRunner's output capture raises an I/O operation on closed file error.",
     "fix_commit": "5ee8e31",
     "changed_files": [
@@ -22,11 +24,55 @@
   },
   {
     "issue_number": 2995,
+    "repo": "click",
     "problem_statement": "Fish shell autocompletion breaks when a command-line argument contains quoted or escaped characters.",
     "fix_commit": "701b313",
     "changed_files": [
       "src/click/shell_completion.py",
       "tests/test_shell_completion.py"
+    ]
+  },
+  {
+    "issue_number": 6096,
+    "repo": "flask",
+    "problem_statement": "Parsing a host header containing an IPv6 address fails because the code incorrectly uses partition(':') to split out the port, which breaks on the colons inside the IPv6 address itself.",
+    "fix_commit": "05e9c6bd",
+    "changed_files": [
+      "src/flask/app.py",
+      "src/flask/testing.py",
+      "tests/test_basic.py",
+      "tests/test_testing.py"
+    ]
+  },
+  {
+    "issue_number": 2374,
+    "repo": "flask",
+    "problem_statement": "jsonify() incorrectly encodes datetime objects that are timezone-aware but not in UTC, producing the wrong timestamp in the JSON output.",
+    "fix_commit": "d625d411",
+    "changed_files": [
+      "CHANGES",
+      "flask/json/__init__.py",
+      "tests/test_helpers.py"
+    ]
+  },
+  {
+    "issue_number": 1841,
+    "repo": "flask",
+    "problem_statement": "Flask fails to import or run correctly under PyPy3 due to a compatibility issue in how string/bytes types are handled.",
+    "fix_commit": "6e46d0cd",
+    "changed_files": [
+      "CHANGES",
+      "flask/_compat.py"
+    ]
+  },
+  {
+    "issue_number": 2731,
+    "repo": "flask",
+    "problem_statement": "When a blueprint's url_prefix and a route's rule both have slashes at the boundary, Flask doesn't correctly merge them, resulting in incorrect or duplicate slashes in the final URL.",
+    "fix_commit": "27d56c1d",
+    "changed_files": [
+      "flask/blueprints.py",
+      "tests/test_blueprints.py"
     ]
   }
 ]
