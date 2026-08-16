@@ -1,0 +1,32 @@
+[
+  {
+    "issue_number": 3487,
+    "problem_statement": "Echoing an empty bytes or bytearray object with click.echo() raises a TypeError instead of writing nothing.",
+    "fix_commit": "a5f5aa6",
+    "changed_files": [
+      "CHANGES.rst",
+      "src/click/utils.py",
+      "tests/test_utils.py"
+    ]
+  },
+  {
+    "issue_number": 3449,
+    "problem_statement": "Using echo_via_pager together with CliRunner's output capture raises an I/O operation on closed file error.",
+    "fix_commit": "5ee8e31",
+    "changed_files": [
+      "CHANGES.rst",
+      "src/click/_termui_impl.py",
+      "tests/test_termui.py",
+      "tests/test_testing.py"
+    ]
+  },
+  {
+    "issue_number": 2995,
+    "problem_statement": "Fish shell autocompletion breaks when a command-line argument contains quoted or escaped characters.",
+    "fix_commit": "701b313",
+    "changed_files": [
+      "src/click/shell_completion.py",
+      "tests/test_shell_completion.py"
+    ]
+  }
+]
