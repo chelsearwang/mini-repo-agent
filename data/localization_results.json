@@ -1,0 +1,162 @@
+[
+  {
+    "issue": 3487,
+    "repo": "click",
+    "gold_files": [
+      "src/click/utils.py"
+    ],
+    "top5_predicted": [
+      "src/click/utils.py",
+      "src/click/termui.py",
+      "src/click/_termui_impl.py",
+      "src/click/types.py",
+      "src/click/core.py"
+    ],
+    "top1_hit": true,
+    "top5_hit": true
+  },
+  {
+    "issue": 3449,
+    "repo": "click",
+    "gold_files": [
+      "src/click/_termui_impl.py"
+    ],
+    "top5_predicted": [
+      "src/click/_compat.py",
+      "src/click/termui.py",
+      "src/click/utils.py",
+      "src/click/shell_completion.py",
+      "src/click/core.py"
+    ],
+    "top1_hit": false,
+    "top5_hit": false
+  },
+  {
+    "issue": 2995,
+    "repo": "click",
+    "gold_files": [
+      "src/click/shell_completion.py"
+    ],
+    "top5_predicted": [
+      "src/click/shell_completion.py",
+      "src/click/_termui_impl.py",
+      "src/click/core.py",
+      "src/click/exceptions.py",
+      "src/click/termui.py"
+    ],
+    "top1_hit": true,
+    "top5_hit": true
+  },
+  {
+    "issue": 6096,
+    "repo": "flask",
+    "gold_files": [
+      "src/flask/app.py"
+    ],
+    "top5_predicted": [
+      "src/flask/app.py",
+      "src/flask/cli.py",
+      "src/flask/helpers.py",
+      "src/flask/sansio/app.py",
+      "src/flask/sessions.py"
+    ],
+    "top1_hit": true,
+    "top5_hit": true
+  },
+  {
+    "issue": 2374,
+    "repo": "flask",
+    "gold_files": [
+      "flask/json/__init__.py"
+    ],
+    "top5_predicted": [
+      "flask/json/__init__.py",
+      "docs/conf.py",
+      "flask/json/tag.py",
+      "flask/__init__.py",
+      "flask/sessions.py"
+    ],
+    "top1_hit": true,
+    "top5_hit": true
+  },
+  {
+    "issue": 1841,
+    "repo": "flask",
+    "gold_files": [
+      "flask/_compat.py"
+    ],
+    "top5_predicted": [
+      "flask/json.py",
+      "flask/app.py",
+      "flask/sessions.py",
+      "flask/_compat.py",
+      "flask/ctx.py"
+    ],
+    "top1_hit": false,
+    "top5_hit": true
+  },
+  {
+    "issue": 2731,
+    "repo": "flask",
+    "gold_files": [
+      "flask/blueprints.py"
+    ],
+    "top5_predicted": [
+      "flask/app.py",
+      "flask/blueprints.py",
+      "flask/helpers.py",
+      "flask/json/__init__.py",
+      "flask/config.py"
+    ],
+    "top1_hit": false,
+    "top5_hit": true
+  },
+  {
+    "issue": 7309,
+    "repo": "requests",
+    "gold_files": [
+      "src/requests/utils.py"
+    ],
+    "top5_predicted": [
+      "src/requests/adapters.py",
+      "src/requests/utils.py",
+      "src/requests/models.py",
+      "src/requests/cookies.py",
+      "src/requests/exceptions.py"
+    ],
+    "top1_hit": false,
+    "top5_hit": true
+  },
+  {
+    "issue": 6628,
+    "repo": "requests",
+    "gold_files": [
+      "src/requests/exceptions.py"
+    ],
+    "top5_predicted": [
+      "src/requests/models.py",
+      "src/requests/utils.py",
+      "src/requests/adapters.py",
+      "src/requests/exceptions.py",
+      "src/requests/sessions.py"
+    ],
+    "top1_hit": false,
+    "top5_hit": true
+  },
+  {
+    "issue": 5274,
+    "repo": "requests",
+    "gold_files": [
+      "requests/adapters.py"
+    ],
+    "top5_predicted": [
+      "requests/sessions.py",
+      "requests/models.py",
+      "requests/adapters.py",
+      "requests/utils.py",
+      "requests/cookies.py"
+    ],
+    "top1_hit": false,
+    "top5_hit": true
+  }
+]
