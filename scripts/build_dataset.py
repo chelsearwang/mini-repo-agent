@@ -48,6 +48,24 @@ instances = [
         "fix_commit": "27d56c1d",
         "problem_statement": "When a blueprint's url_prefix and a route's rule both have slashes at the boundary, Flask doesn't correctly merge them, resulting in incorrect or duplicate slashes in the final URL.",
     },
+    {
+        "issue_number": 7309,
+        "repo": "requests",
+        "fix_commit": "f0198e6d",
+        "problem_statement": "When parsing a Content-Type header that contains a malformed parameter (one with no '=' sign), the parser stores a boolean True as that parameter's value instead of a string, which can cause type errors in code that expects all header parameter values to be strings.",
+    },
+    {
+        "issue_number": 6628,
+        "repo": "requests",
+        "fix_commit": "3ff3ff21",
+        "problem_statement": "When a JSONDecodeError exception is raised inside a multiprocessing worker, attempting to pass it back to the main process via pickling fails, crashing the entire process pool instead of just reporting the JSON parsing error.",
+    },
+    {
+        "issue_number": 5274,
+        "repo": "requests",
+        "fix_commit": "6fbfca90",
+        "problem_statement": "When a request manually specifies a Host header, the underlying HTTP connection still adds its own automatic Host header on top of it, resulting in two Host headers being sent in the same request, which some servers reject or handle incorrectly.",
+    },
 ]
 
 dataset = []
